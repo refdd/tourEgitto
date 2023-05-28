@@ -1,0 +1,148 @@
+.singelBolgImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000003d;
+}
+.singelBolgImage img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.duration span,
+.autherBy span {
+  color: #878787;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+}
+.duration i,
+.autherBy i {
+  color: #878787;
+  font-size: 20px;
+}
+.single-b-titel {
+  font-size: 42px;
+  line-height: 44px;
+  color: #1e1e1e;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.single-b-desc .desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #878787;
+}
+.imageDesc img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.single-b-share i {
+  font-size: 20px;
+  color: #878787;
+  cursor: pointer;
+}
+.single-b-share span {
+  font-size: 16px;
+  margin-left: 5px;
+  color: #878787;
+  cursor: pointer;
+}
+.cardAuther .image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.cardAuther .content {
+  font-size: 29px;
+  line-height: 1.2em;
+  color: #1e1e1e;
+  font-weight: 700;
+}
+.cardAuther .desc {
+  font-weight: 600;
+  line-height: 23px;
+  font-size: 16px;
+  color: #878787;
+}
+.headerSider {
+  font-size: 29px;
+  line-height: 1.2em;
+  color: #1e1e1e;
+  font-weight: 700;
+}
+.categories .listCategories li {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+  color: #878787;
+}
+.inst_Image {
+  width: 75px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.inst_Image img {
+  max-width: 100%;
+  width: 100%;
+  height: 75px;
+  object-fit: cover;
+}
+.inst_Image i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  visibility: hidden;
+  transition: visibility ease-in-out 0.2s;
+}
+.inst_Image .lauoutInst {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000021;
+  visibility: hidden;
+  transition: visibility ease-in-out 0.2s;
+}
+.inst_Image:hover i {
+  visibility: visible;
+}
+.inst_Image:hover .lauoutInst {
+  visibility: visible;
+}
+.flllowSection i {
+  color: #878787;
+  font-size: 18px;
+  cursor: pointer;
+}
+.pagenation i {
+  font-size: 20px;
+  color: #1e1e1e;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+.pagenation span {
+  color: #1e1e1e;
+  font-weight: 600;
+  font-size: 19px;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+.prev:hover i,
+.next:hover i {
+  color: #59815b;
+}
+.prev:hover span,
+.next:hover span {
+  color: #59815b;
+}

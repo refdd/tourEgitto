@@ -1,0 +1,489 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* banner */
+.banner {
+  background-image: url("../image/Image.png");
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  background-size: cover;
+}
+/* header */
+.header_From {
+}
+.header_From .header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+}
+.header_From .description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+/* from */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.from {
+  display: flex;
+  flex-direction: column;
+}
+.steps {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.step {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #3d3d3d;
+  font-size: 16px;
+  border: 0.5px solid #c6c6c6;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+.step span {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+.step.active {
+  background: #157ffb;
+  color: #fff;
+}
+
+.stepLiner {
+  height: 1.5px;
+  background-color: #b3b3b3;
+  width: 50px;
+  position: relative;
+  margin-right: 6px;
+}
+.stepLiner.active {
+  background: #157ffb;
+}
+.stepLiner::before {
+  content: "";
+  right: 0;
+  top: -0.7px;
+  position: absolute;
+  height: 1.5px;
+  width: 1.5px;
+  border: 1.5px solid;
+  border-color: #b3b3b3 #b3b3b3 transparent transparent;
+  transform: rotate(43deg);
+}
+.stepLiner.active::before {
+  border-color: #157ffb #157ffb transparent transparent;
+}
+/* liner form */
+.line_from {
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+}
+/* from input */
+.fromInput {
+  padding: 0 18px;
+}
+.inputcontainter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.inputcontainter .fromTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #3d3d3d;
+}
+.Mail_name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: -5px;
+}
+.name,
+.mail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 49%;
+}
+.name label,
+.mail label,
+.nationalty label {
+  font-size: 16px;
+  color: #777;
+  text-transform: capitalize;
+}
+.nationalty {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+#select-beast + .ts-wrapper.single .ts-control {
+  border-radius: 10px;
+}
+.arrowNatioality {
+  position: absolute;
+  bottom: 13px;
+  z-index: 100;
+  right: 20px;
+  cursor: pointer;
+}
+.ts-control {
+  padding: 14px 8px !important;
+}
+.name input[type="text"],
+.mail input[type="text"] {
+  padding: 14px 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.name input[type="text"]::placeholder,
+.mail input[type="text"]::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+  text-transform: capitalize;
+}
+.name input[type="text"]:focus,
+.mail input[type="text"]:focus {
+  outline: none;
+}
+.condNumberConteiner label {
+  font-size: 16px;
+  color: #777;
+  text-transform: capitalize;
+}
+.inputNumberContainer {
+  display: flex;
+}
+.code {
+  width: 100px;
+  position: relative;
+}
+.arrowCode {
+  position: absolute;
+  top: 14px;
+  z-index: 100;
+  right: 5px;
+  cursor: pointer;
+}
+
+#select-code + .ts-wrapper.single .ts-control {
+  padding: 14.2px 10px !important;
+  border-radius: 10px 0 0 10px !important;
+  border-right: 0;
+}
+.number {
+  flex: 1;
+}
+.number input[type="number"] {
+  padding: 14px 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 0 10px 10px 0;
+  width: 91%;
+}
+.number input[type="number"]::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+  text-transform: capitalize;
+}
+.number input[type="number"]:focus {
+  outline: none;
+}
+.inputCounterContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 100%;
+}
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.counterContainer p {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #747474;
+}
+.counter {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 9px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.counter.Children {
+  /* margin-right: -5px; */
+}
+.C_counter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #c0c0c0;
+}
+.add {
+  width: 28px;
+  height: 21px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+.remove {
+  width: 28px;
+  height: 21px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+.add:hover,
+.remove:hover {
+  transform: scale(0.9);
+}
+/* buttom */
+.nextButtom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+.nextButtom button {
+  padding: 8.04104px;
+  width: 200.9px;
+  height: 60.23px;
+  background: #157ffb;
+  border-radius: 6.43283px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.2575px;
+  line-height: 13px;
+  color: #fff;
+}
+.nextButtom button:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.nationAndNumber {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.counterInput {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  width: 26px;
+  text-align: center;
+}
+.stepsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.singelStep {
+  position: relative;
+}
+.contentStep {
+  position: absolute;
+  font-size: 13px;
+  width: 95px;
+  bottom: -21px;
+  left: -84%;
+  font-weight: 700;
+  color: #7c7c7c;
+}
+.lauStep {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 0.5px solid #c6c6c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lauStep.active {
+  color: #fff;
+  background-color: #157ffb;
+}
+/* responsev desktop */
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 100%;
+    padding-bottom: 160px;
+    padding-top: 70px;
+  }
+  .from {
+    flex-direction: row-reverse;
+  }
+  .container {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .line_from {
+    width: 1px;
+    height: auto;
+  }
+  .header_From .header {
+    font-size: 48px;
+  }
+  .header_From .description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .steps {
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inputcontainter .fromTitle {
+    font-size: 30px;
+  }
+  .nationAndNumber {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .nationalty {
+    width: 48%;
+  }
+  .condNumberConteiner {
+    width: 48%;
+  }
+  .inputNumberContainer {
+    margin-top: 7px;
+  }
+  .inputCounterContainer {
+    flex-wrap: nowrap;
+    gap: 25px;
+  }
+  .counterContainer {
+    width: 30%;
+  }
+  .fromInput {
+    width: 60%;
+  }
+  .nextButtom button {
+    font-size: 24px;
+  }
+  .counter {
+    gap: 2px;
+  }
+  .stepLiner {
+    height: 50px;
+    width: 1px;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+  .stepLiner::before {
+    right: -1.5px;
+    top: auto;
+    bottom: -1.1px;
+    height: 1.5px;
+    width: 1.5px;
+    transform: rotate(135deg);
+  }
+  .step {
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+
+    color: #3d3d3d;
+  }
+  .step span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .titelStep {
+    top: 0;
+    left: 0;
+    width: 100px;
+  }
+  .stepsSection {
+    flex-direction: column;
+    width: 30%;
+  }
+  .stepsSection {
+    flex-direction: column;
+    width: 30%;
+    padding-left: 116px;
+    padding-bottom: 0px;
+  }
+  .contentStep {
+    position: absolute;
+    font-size: 18px;
+    width: 104px;
+    bottom: 5px;
+    left: -413%;
+    font-weight: 700;
+    color: #7c7c7c;
+  }
+}

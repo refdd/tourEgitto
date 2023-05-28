@@ -1,0 +1,839 @@
+.carousel-caption.contentHeader {
+  position: absolute;
+  top: 156px;
+  left: 14px;
+}
+
+.carousel-caption.contentHeader p {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  color: #ffffff;
+}
+.infoTour {
+  position: absolute;
+  z-index: 20;
+  bottom: 35px;
+  width: 100%;
+  color: #ffffff;
+}
+.infoTour ul li span {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 14px;
+  color: #ffffff;
+}
+.infoTour ul li:nth-of-type(3) i {
+  color: #ffe234;
+}
+.carousel-item img {
+  height: 300px;
+}
+.tapsTour {
+  background: #01a8c3;
+  padding: 10px !important;
+  position: absolute;
+  top: -23px;
+  width: 100%;
+  left: 12px;
+  transform: translate(-0%, 0%);
+}
+.layoutviews {
+  display: none;
+}
+.layoutviews.active {
+  display: block;
+}
+.tapsTour li {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.tapsTour li.active {
+  background: #003366;
+  padding: 8px;
+  color: #ffff;
+}
+.video_container {
+  height: 263px;
+}
+.video_container video {
+  object-fit: cover;
+}
+.content_overview {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: justify;
+  color: #3d3d3d;
+}
+.header_included {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.included_section li span,
+.exincluded_section li span {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.included_section li i {
+  font-size: 16px;
+  color: #69e230;
+}
+.exincluded_section li i {
+  font-size: 16px;
+  color: #ff5449;
+}
+.inquireSection {
+  background: #fff;
+  border: 1px dashed #cfd3da;
+}
+.headerInquery {
+  background: #e46d30;
+  padding: 14px;
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.code_selected {
+  width: 90px;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.inputCode {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.startDate,
+.endDate,
+.textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.startDate input,
+.endDate input {
+  padding: 11px 0px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 100%;
+}
+.startDate input::placeholder,
+.endDate input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+  padding-left: 8px;
+}
+.startDate input:focus,
+.endDate input:focus {
+  outline: none;
+}
+.inputCounter {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+.inputCounter span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.counterbox {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.2s;
+}
+.counterbox.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.counterbox .counter {
+  padding: 15px;
+}
+.counterContainer i,
+.counterContainer span {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  color: #e46d30;
+}
+.textCounter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3d3d3d;
+}
+.counterContainer input {
+  width: 40px;
+  background-color: transparent !important;
+  border: 0;
+}
+.counterContainer input:focus {
+  box-shadow: none !important;
+}
+.counterContainer img:hover {
+  transform: scale(0.9);
+}
+.buttoncounter {
+  background: #01a8c3;
+  border-radius: 10px;
+}
+.buttoncounter:hover {
+  transform: scale(0.9);
+}
+.buttoncounter button {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.contextFormInauire {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #7a7a7a;
+}
+.flightFelid {
+  display: none;
+}
+.flightFelid.active {
+  display: block;
+}
+.form-group textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c0c0c0;
+}
+.bottonInqueryFrom {
+  background: #e46d30;
+  border-radius: 10px;
+}
+.bottonInqueryFrom:hover {
+  transform: scale(0.9);
+}
+.bottonInqueryFrom button {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.headerItinerary .content span {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.headerItinerary .content div {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+  color: #3d3d3d;
+}
+.stepItinerary {
+  background: #01a8c3;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: none !important;
+}
+.itineraryDay {
+  background: #f5f5f5 !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 8px !important;
+}
+.itineraryDay .headerday {
+  font-family: "Cairo", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 34px !important;
+  color: #003366 !important;
+}
+
+.headerAccommmedation {
+  background: #f5f5f5;
+  border-width: 0.432384px;
+  border-style: solid;
+  border-color: #dedede;
+  border-radius: 6.48577px 6.48577px 0px 0px;
+  height: 56px;
+  padding: 0 12.9715px;
+  gap: 1px;
+}
+.headerAccommmedation .line {
+  width: 1px;
+  height: 100%;
+  background-color: #dedede;
+}
+.headerAccommmedation .line {
+  width: 1px;
+  height: 100%;
+  background-color: #dedede;
+}
+.contentAccommmedation {
+  padding: 0 12.9715px;
+}
+.contentAccommmedation div:nth-of-type(1) span:nth-of-type(1) {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9715px;
+  line-height: 14px;
+  text-align: center;
+  color: #3d3d3d;
+}
+.contentAccommmedation div:nth-of-type(1) span:nth-of-type(2) {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.64769px;
+  line-height: 9px;
+  text-align: center;
+  color: #7a7a7a;
+}
+.tabletext {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9715px;
+  line-height: 13px;
+  color: #3d3d3d;
+  text-align: left;
+}
+.roomType {
+  width: 100%;
+}
+.roomType span {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.3772px;
+  line-height: 10px;
+  color: #3d3d3d;
+}
+.seconsText,
+.priseAccommmedation {
+  height: 150px;
+}
+.seconsText span:nth-of-type(1) {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9715px;
+  line-height: 14px;
+  text-align: center;
+  color: #3d3d3d;
+}
+thead tr th:nth-of-type(1) {
+  background: #01a8c3;
+  color: #ffffff;
+}
+thead tr {
+  background: #f5f5f5;
+}
+.seconsText span:nth-of-type(2) {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.64769px;
+  line-height: 9px;
+  text-align: center;
+  color: #7a7a7a;
+}
+.priseAccommmedation span {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.7545px;
+  line-height: 21px;
+  text-align: center;
+  color: #3d3d3d;
+}
+.headerInfo {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.accordion-item.mt-4.rounded-3 {
+  background: #fff;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.formRview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+.formRview .header {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.rateText {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.rateStar {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+/* rate star */
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #ffe234;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* end rate star */
+.ReviewTitle {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.recommend {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3d3d3d;
+}
+.formRview .buttomSubmit {
+  background: #01a8c3;
+  border-radius: 5px;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.formRview .buttomSubmit:hover {
+  transform: scale(0.9);
+}
+.formRview .buttomSubmit button {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.fotorama__wrap .fotorama__pointer {
+  border-radius: 15px;
+}
+.fotorama__thumb {
+  border-radius: 15px;
+}
+.fotorama1676740941234 .fotorama__thumb-border {
+  border-radius: 15px;
+}
+.fotorama1676741244378 .fotorama__nav--thumbs .fotorama__nav__frame {
+  margin-right: 12px;
+}
+/* .fotorama__thumb-border {
+  margin-right: 12px;
+} */
+.shareSection i {
+  font-size: 20;
+  color: #969ba1;
+}
+.shareSection span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #969ba1;
+}
+.share:hover .boxShare {
+  opacity: 1;
+  visibility: visible;
+}
+.shareSection .boxShare:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.shareSection .boxShare {
+  /* top: 382%; */
+  left: 50%;
+  transform: translate(-50%, 110%);
+  opacity: 0;
+  visibility: hidden;
+  bottom: 0;
+  background: #fff;
+}
+
+.shareSection .boxShare li i {
+  color: #003366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  z-index: 10000;
+}
+.nameTour {
+  line-height: 36px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+}
+.featuredBox {
+  border-right: 1px dashed #cfd3da;
+}
+.featuredBox span:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969ba1;
+}
+.featuredBox span:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #000000;
+}
+.featuredBox span.price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e46d30;
+}
+.featuredBox .star i {
+  color: #ffc122;
+}
+.headerDesc {
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.SingelTaps {
+  border: 1px dashed #cfd3da;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.SingelTaps::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -8px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #e46d30;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.SingelTaps.active {
+  color: #fff;
+  background-color: #e46d30;
+  border: 1px solid #e46d30;
+}
+.SingelTaps.active::after {
+  opacity: 1;
+}
+.SingelTaps.active span {
+  color: #fff;
+}
+.SingelTaps span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: #000000;
+}
+.headerMayLike {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.Promo {
+  background-image: url(../../image/single_to_book.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promoContent {
+  min-height: 200px;
+}
+.promoContent span:nth-of-type(1) {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+.promoContent span:nth-of-type(2) {
+  color: #e46d30;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.promoContent span:nth-of-type(3) {
+  color: #5c626a;
+  font-size: 17px;
+  font-weight: 500;
+}
+.promoContent .btnPromo button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  text-transform: capitalize;
+  color: #000000;
+}
+.promoContent .btnPromo i {
+  color: #e46d30;
+  font-size: 14px;
+}
+/* responsev singel tour */
+@media only screen and (max-width: 786px) {
+  .sticky-Section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+    z-index: 1020;
+  }
+}
+@media only screen and (min-width: 786px) {
+  .carousel-item img {
+    height: 500px;
+  }
+  .sticky-Section {
+    position: relative;
+  }
+  .carousel-caption.contentHeader {
+    top: auto;
+    bottom: 114px;
+    left: 10px;
+  }
+  .fotorama__wrap .fotorama__pointer {
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+  .carousel-caption.contentHeader p {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .infoTour ul li span {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 14px;
+    color: #ffffff;
+  }
+  .tapsTour {
+    background: #01a8c3;
+    width: 95%;
+  }
+  .tapsTour {
+    background: #01a8c3;
+    padding: 10px !important;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tapsTour li {
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .content_overview {
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3d3d3d;
+  }
+  .included_section li span,
+  .exincluded_section li span {
+    font-size: 18px;
+  }
+  .table > :not(caption) > * > * {
+    padding: 1rem 1rem !important;
+  }
+  .seconsText span:nth-of-type(1) {
+    font-size: 18.9715px;
+  }
+  .seconsText span:nth-of-type(2) {
+    font-size: 14.64769px;
+  }
+  .tabletext {
+    font-size: 16.9715px;
+    line-height: 23px;
+  }
+  .roomType span {
+    font-size: 14.3772px;
+  }
+  .priseAccommmedation span {
+    font-size: 24.7545px;
+  }
+  .formRview {
+    padding: 22px;
+  }
+  .tapsTour li.active {
+    background: #003366;
+    color: #fff;
+    padding: 10px;
+  }
+  .itineraryDay .headerday {
+    font-family: "Cairo", sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 10px !important;
+    color: #3d3d3d !important;
+  }
+  .itineraryDay .headerday {
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    color: #3d3d3d !important;
+  }
+  .SingelTaps:hover::after {
+    opacity: 1;
+  }
+  .SingelTaps:hover {
+    background-color: #e46d30;
+    border: 1px solid #e46d30;
+  }
+  .SingelTaps:hover span {
+    color: #fff;
+  }
+  .nameTour {
+    font-size: 32px;
+    line-height: 36px;
+    color: #000000;
+    font-size: 38px;
+    font-weight: 400;
+  }
+}

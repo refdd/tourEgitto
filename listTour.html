@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+
+    <link rel="stylesheet" href="css/listtours/style.css" />
+    <link rel="stylesheet" href="css/singleTour/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- normalizer.css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="">
+      <nav class="nav_container backgroundTransparent py-2">
+        <div class="row align-items-center flex-md-nowrap">
+          <!-- image  -->
+          <div class="imgae_logo col-6 col-md-3">
+            <img src="./image/newLogo.svg" alt="" />
+          </div>
+          <!-- links -->
+          <ul class="links_container col-md-7">
+            <li class="active">
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href="listCrouse.html"> Crociere Sul Nilo</a>
+            </li>
+            <li>
+              <a href="listTour.html">Tour Egitto</a>
+            </li>
+            <li>
+              <a href="aboutUs.html"> About us </a>
+            </li>
+            <li>
+              <a href="listBlog.html"> Blog </a>
+            </li>
+            <li>
+              <a href="offerTour.html"> OfferTour </a>
+            </li>
+          </ul>
+
+          <!-- buttom inquery -->
+          <div class="buttom_inquri col-3 row-cols-md-2">
+            <a href="inquri.html">
+              <button>inqueri</button>
+            </a>
+          </div>
+          <!-- menue bar icon  -->
+          <div class="col-3 d-block d-md-none">
+            <div
+              class="iconMneu d-flex justify-content-center align-items-center"
+            >
+              <i class="fa fa-bars"></i>
+              <img src="image/close-x.svg" alt="" />
+            </div>
+          </div>
+          <!-- links menu -->
+          <div
+            class="col-12 menu_Bar d-flex flex-column mt-3 border-top gap-3 d-md-none"
+          >
+            <ul class="mb-0 linksMenu">
+              <li class="border-bottom py-3"><a href="/"> Home</a></li>
+              <li class="border-bottom py-3">
+                <a href="listCrouse.html"> Crociere Sul Nilo</a>
+              </li>
+              <li class="border-bottom py-3">
+                <a href="listTour.html"> Tour Egitto</a>
+              </li>
+              <li class="border-bottom py-3">
+                <a href="aboutUs.html"> About us </a>
+              </li>
+              <li class="border-bottom border-3 py-3">
+                <a href="listBlog.html"> Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- header landPage -->
+    <div class="landPageHeader">
+      <div class="textBlog">
+        <div class="contentListBlog">Egypt travel Tour</div>
+      </div>
+    </div>
+    <!-- button inquery -->
+    <div class="button_moblie">
+      <button>INQUIRE NOW!</button>
+    </div>
+    <!-- filter and secrch  -->
+    <div>
+      <div class="container-sm position-relative mt-2">
+        <div class="headerTour">Egypt tour package</div>
+      </div>
+    </div>
+
+    <!-- list tour Section  -->
+    <div class="container-sm pt-2 mt-1">
+      <div class="row">
+        <div class="col-12 col-md-4 order-2 order-md-1">
+          <div
+            class="inquireSection rounded-3 overflow-hidden sticky-md-top"
+            id="from"
+          >
+            <div class="headerInquery text-center">INQUIRE NOW</div>
+            <div
+              class="form_inquire row gap-2 justify-content-center py-1 px-3"
+            >
+              <!-- name and email -->
+              <div class="row gx-1">
+                <div class="col-6">
+                  <input
+                    class="form-control col"
+                    type="text"
+                    placeholder="Name"
+                    aria-label="Name example"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email"
+                    aria-label="Email example"
+                  />
+                </div>
+              </div>
+              <div class="row gx-1">
+                <div class="col-6">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Nationality</option>
+                    <option value="1">egypt</option>
+                    <option value="2">cairo</option>
+                    <option value="3">paris</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <select
+                      class="form-select code_selected"
+                      aria-label="Default select example"
+                    >
+                      <option selected>code</option>
+                      <option value="1">+1</option>
+                      <option value="2">+20</option>
+                      <option value="3">+23</option>
+                      <option value="3">+43</option>
+                      <option value="3">+80</option>
+                    </select>
+                    <input
+                      class="form-control inputCode"
+                      type="text"
+                      placeholder="Number"
+                      aria-label="Name example"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- date -->
+              <div class="d-flex gap-2 align-items-center">
+                <div class="startDate">
+                  <label>Arrival* </label>
+                  <div class="date">
+                    <input
+                      type="text"
+                      placeholder=" Arrival Date "
+                      onfocus="(this.type='date')"
+                    />
+                  </div>
+                </div>
+                <!-- end date -->
+                <div class="endDate">
+                  <label>Departure*</label>
+                  <div class="date">
+                    <input
+                      type="text"
+                      placeholder="Departure Date"
+                      onfocus="(this.type='date')"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- counter drobdown -->
+              <div class="drobdownCounter">
+                <div class="row gx-0 gy-1">
+                  <div class="col-12">
+                    <!-- adults -->
+                    <div
+                      class="d-flex justify-content-between gap-2 align-items-center w-100 border rounded-2 px-1"
+                    >
+                      <span class="textCounter"> Adults </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2"
+                      >
+                        <div class="" onclick="removeCounter('adults')">
+                          <i class="fas fa-minus"></i>
+                        </div>
+
+                        <input
+                          id="adults"
+                          type="text"
+                          name="adults"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <div class="" onclick="addCounter('adults')">
+                          <i class="fas fa-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <!-- children -->
+                    <div
+                      class="d-flex justify-content-between gap-2 align-items-center w-100 border rounded-2 px-1"
+                    >
+                      <span class="textCounter"> Children </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2"
+                      >
+                        <div class="" onclick="removeCounter('Children')">
+                          <i class="fas fa-minus"></i>
+                        </div>
+
+                        <input
+                          id="Children"
+                          type="text"
+                          name="Children"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <div class="" onclick="addCounter('Children')">
+                          <i class="fas fa-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fight chack box -->
+              <div class="d-flex gap-3 align-content-center">
+                <div class="form-check">
+                  <input
+                    onchange="openAndCloseFlightFiled(this)"
+                    class="form-check-input flightcheck"
+                    type="checkbox"
+                    value=""
+                    id="flightcheck"
+                  />
+                  <label
+                    class="form-check-label contextFormInauire"
+                    for="flexCheckDefault"
+                  >
+                    Add flight
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <input
+                  class="form-control flightFelid"
+                  type="text"
+                  placeholder="Aeroporti comodi per la partenza"
+                  aria-label="Name example"
+                />
+              </div>
+              <!-- text aera -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Your tour requirements"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div
+                class="bottonInqueryFrom w-100 d-flex justify-content-center align-items-center p-3 my-2"
+              >
+                <button>INQUIRE NOW!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 order-1 order-md-2">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_10.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_8.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_14.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_15.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_10.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_8.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_14.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6">
+              <a href="singleTour.html">
+                <!-- cards offer -->
+                <div class="offerCard mx-3 mx-md-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cardImg position-relative">
+                        <img src="image/tour_15.jpg" alt="" />
+                        <div
+                          class="d-flex flex-column gap-2 stats position-absolute"
+                        >
+                          <div class="kindTour">
+                            <span>Populer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="contentCard d-flex flex-column py-3 px-4">
+                        <div class="header">
+                          Uluru and Kings Canyon Discovery
+                        </div>
+                        <div class="desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quas, deleniti!
+                        </div>
+                        <div class="d-flex gap-5 align-items-center mb-3">
+                          <div class="durationOffer">
+                            <i class="far fa-clock"></i>
+                            <span>12 days</span>
+                          </div>
+                          <div class="rating d-flex align-items-center">
+                            <div class="star d-flex align-items-center">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.38/5</span>
+                          </div>
+                        </div>
+                        <div
+                          class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                        >
+                          <div
+                            class="priceOffer d-flex align-items-center gap-1"
+                          >
+                            <span>From</span>
+                            <span>$122</span>
+                            <span>$150</span>
+                          </div>
+                          <div class="btnMoreInfo d-flex align-items-center">
+                            <button>More Ingomation</button>
+                            <i class="fa fa-arrow-right"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- F and Q -->
+    <div class="container-sm">
+      <div class="headerSection">
+        <div class="header">FREQUENTLY ASKED QUESTIONS</div>
+      </div>
+      <!-- faq section -->
+      <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <span>Q.</span>
+              Do you offer international packages?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The best destinations for honeymoon are Kerala, Goa, Uttarakhand,
+              Andaman Islands, and Kashmir.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              <span>Q.</span>
+
+              Can we customize our package with you?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The best destinations for honeymoon are Kerala, Goa, Uttarakhand,
+              Andaman Islands, and Kashmir.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              <span>Q.</span>
+
+              Why would we book our package?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The best destinations for honeymoon are Kerala, Goa, Uttarakhand,
+              Andaman Islands, and Kashmir.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="footerSection">
+      <div class="container">
+        <div class="row gx-0 gy-3">
+          <!-- logo footer -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column gap-3">
+              <div class="logoFooter">
+                <img src="image/newLogo.svg" alt="" />
+              </div>
+              <div class="footerdesc">
+                We are one of the world’s largest travel sellers on tours and
+                cruises. With tour operator volume buys plus our low everyday
+                prices you can save up to 40% versus assembling the same
+                itinerary on your own!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row px-2">
+              <div class="footerLinks col-12 col-md-4">
+                <div class="headerLinks py-3">COMPANY</div>
+                <ul class="links">
+                  <li>Home</li>
+                  <li>Crociere Sul Nilo</li>
+                  <li>Tour Egitto</li>
+                  <li><a href="aboutUs.html"> About us </a></li>
+                  <li><a href="contactUs.html"> Contact Us</a></li>
+
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <div class="footerLinks col-12 col-md-4">
+                <div class="headerLinks py-3">TOP DESTINATIONS</div>
+                <ul class="links">
+                  <li>New York City</li>
+                  <li>San Francisco</li>
+                  <li>Las Vegas</li>
+                  <li><a href="aboutUs.html"> Hawaii</a></li>
+                  <li>egypt</li>
+                </ul>
+              </div>
+              <div class="contactUsFooter col-12 col-md-4">
+                <div class="headerLinks py-3">contact us</div>
+                <ul class="coutactUs d-flex flex-column gap-2">
+                  <li class="">
+                    <div class="iconSocil">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <span>mohamedrefat@gmail.com</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <i class="fab fa-facebook"></i>
+                    </div>
+                    <span>Crociere Sul Nilo Travel</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <i class="fab fa-pinterest"></i>
+                    </div>
+                    <span>CrociereSulNilo.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyRightSection">
+      <div>Copyright © CrociereSulNilo 2021. All right reserved.</div>
+      <div>Terms and Privacy Policy</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/listTour.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.Destination {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Destination label,
+.dateContainer label,
+.textArea label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+.ts-control > input::placeholder {
+  font-size: 18px !important;
+}
+.ts-control {
+  padding: 14px 10px !important;
+  border-radius: 10px !important;
+}
+.dateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.startDate,
+.endDate {
+  width: 48%;
+}
+.startDate,
+.endDate,
+.textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.startDate input,
+.endDate input {
+  padding: 14px 0px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 100%;
+}
+.startDate input::placeholder,
+.endDate input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c0c0c0;
+  padding-left: 8px;
+}
+.startDate input:focus,
+.endDate input:focus {
+  outline: none;
+}
+.textArea textarea {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 15px;
+}
+.textArea textarea:focus {
+  outline: none;
+}
+.textArea textarea:focus {
+  outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../image/Chevron (1).png") no-repeat;
+  width: 16px;
+  height: 16px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-width: thin;
+}
+/* responsev desktop */
+@media only screen and (min-width: 768px) {
+  .startDate,
+  .endDate {
+    width: 100%;
+  }
+  .startDate input,
+  .endDate input {
+    width: 90%;
+  }
+}

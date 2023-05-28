@@ -1,0 +1,43 @@
+.budgets {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.budgets label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+.ts-control > input::placeholder {
+  font-size: 18px !important;
+}
+.ts-control {
+  padding: 14px 10px !important;
+  border-radius: 10px !important;
+}
+.DepartureAirport {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.DepartureAirport input[type="text"] {
+  padding: 14px 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.DepartureAirport input[type="text"]::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c0c0c0;
+}
+.DepartureAirport input[type="text"]:focus {
+  outline: none;
+}

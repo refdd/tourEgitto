@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/from.css" />
+    <link rel="stylesheet" href="./css/inquri.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css"
+      rel="stylesheet"
+    />
+    <title>from</title>
+  </head>
+  <body>
+    <div class="banner">
+      <!-- header buttom -->
+      <div class="header_From">
+        <div class="header">TAILOR MAKE YOUR TRIP</div>
+        <div class="description">
+          With Nile Cruise Vacation you can customize your trip as you prefer.
+        </div>
+      </div>
+      <!-- from  -->
+      <div class="container">
+        <div class="from-container">
+          <div class="from">
+            <!-- steps -->
+            <div class="stepsSection">
+              <div class="singelStep">
+                <div class="lauStep active"><span>1</span></div>
+                <div class="contentStep">Trip Details</div>
+              </div>
+              <div class="stepLiner active"></div>
+
+              <div class="singelStep">
+                <div class="lauStep active"><span>2</span></div>
+                <div class="contentStep">Your budget</div>
+              </div>
+              <div class="stepLiner"></div>
+
+              <div class="singelStep">
+                <div class="lauStep"><span>3</span></div>
+                <div class="contentStep">Your Details</div>
+              </div>
+            </div>
+            <!-- liner -->
+            <div class="line_from"></div>
+            <!-- form input -->
+            <div class="fromInput">
+              <div class="inputcontainter">
+                <p class="fromTitle">Let’s plan your trip now!</p>
+                <!-- budget -->
+                <div class="budgets">
+                  <label>your budget *</label>
+
+                  <select
+                    id="select-budget"
+                    placeholder="Natioality .."
+                    autocomplete="off"
+                  >
+                    <option value="">Select a person...</option>
+                    <option value="4">Thomas Edison</option>
+                    <option value="1">Nikola</option>
+                    <option value="3">Nikola Tesla</option>
+                    <option value="5">Arnold Schwarzenegger</option>
+                  </select>
+                </div>
+                <div class="budgets">
+                  <label>Accommodation Type*</label>
+
+                  <select
+                    id="select-Accommodation"
+                    placeholder="Accommodation .."
+                    autocomplete="off"
+                  >
+                    <option value="">Select a person...</option>
+                    <option value="4">Thomas Edison</option>
+                    <option value="1">Nikola</option>
+                    <option value="3">Nikola Tesla</option>
+                    <option value="5">Arnold Schwarzenegger</option>
+                  </select>
+                </div>
+                <div class="budgets">
+                  <label
+                    >Add flight offer to your vacation package (Optional)</label
+                  >
+
+                  <div class="DepartureAirport">
+                    <label>name</label>
+                    <input type="text" placeholder="Departure Airport" />
+                  </div>
+                  <!-- button -->
+                  <div class="nextButtom">
+                    <a href="final.html">
+                      <button>
+                        <span>Next</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <script src="./js/from.js"></script>
+  </body>
+</html>

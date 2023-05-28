@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/singileCruise/singileCruise.css" />
+    <link rel="stylesheet" href="css/singleTour/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- normalizer.css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="container-sm py-2">
+      <nav class="nav_container row py-2 flex-md-nowrap align-items-center">
+        <!-- image  -->
+        <div class="imgae_logo col-6 col-md-3">
+          <img src="./image/newLogo.svg" alt="" />
+        </div>
+        <!-- links -->
+        <ul class="links_container col-md-7">
+          <li class="active">
+            <a href=""> Home </a>
+          </li>
+          <li>
+            <a href="listCrouse.html"> Crociere Sul Nilo</a>
+          </li>
+          <li>
+            <a href="listTour.html">Tour Egitto</a>
+          </li>
+          <li>
+            <a href="/"> About us </a>
+          </li>
+          <li>
+            <a href="listBlog.html"> Blog </a>
+          </li>
+          <li>
+            <a href="offerTour.html"> OfferTour </a>
+          </li>
+        </ul>
+
+        <!-- buttom inquery -->
+        <div class="buttom_inquri col-3 row-cols-md-2">
+          <a href="inquri.html">
+            <button>inqueri</button>
+          </a>
+        </div>
+        <!-- menue bar icon  -->
+        <div class="col-3 d-block d-md-none">
+          <div
+            class="iconMneu d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-bars"></i>
+            <img src="image/close-x.svg" alt="" />
+          </div>
+        </div>
+        <!-- links menu -->
+        <div
+          class="col-12 menu_Bar d-flex flex-column mt-3 border-top gap-3 d-md-none"
+        >
+          <ul class="mb-0 linksMenu">
+            <li class="border-bottom py-3"><a href="/"> Home</a></li>
+            <li class="border-bottom py-3">
+              <a href="listCrouse.html"> Crociere Sul Nilo</a>
+            </li>
+            <li class="border-bottom py-3">
+              <a href="listTour.html"> Tour Egitto</a>
+            </li>
+            <li class="border-bottom py-3"><a href="/"> About us</a></li>
+            <li class="border-bottom border-3 py-3">
+              <a href="listBlog.html"> Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- ADHeader -->
+
+    <!-- button inquery -->
+    <div class="button_moblie">
+      <button>INQUIRE NOW!</button>
+    </div>
+    <!-- taps section  -->
+    <!-- <div class="container-sm position-relative mb-5">
+      <ul class="row align-items-center gap-2 tapsTour">
+        <li class="taptour active col">Overview</li>
+        <li class="taptour col">Itinerary</li>
+        <li class="taptour col">Prices and Accommodation</li>
+        <li class="taptour col">Trip Information</li>
+      </ul>
+    </div> -->
+    <!-- taps sction overview -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="shareSection d-flex align-items-center gap-3 mt-2 mb-2">
+            <div
+              class="share position-relative d-flex align-items-center gap-1"
+            >
+              <i class="fa fa-share-alt"></i>
+              <span>share</span>
+              <ul
+                class="position-absolute boxShare d-flex flex-column gap-2 align-items-center"
+              >
+                <li class="d-flex align-items-center justify-content-center">
+                  <i class="fab fa-facebook-square"></i>
+                </li>
+                <li class="d-flex align-items-center justify-content-center">
+                  <i class="fab fa-twitter-square"></i>
+                </li>
+                <li class="d-flex align-items-center justify-content-center">
+                  <i class="fab fa-linkedin"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <i class="fa fa-heart"></i>
+              <span>Add To wishList</span>
+            </div>
+          </div>
+          <!-- tour name  -->
+          <div class="nameTour my-3">Broome to the Bungle Bungles</div>
+          <div class="row gx-2 gy-3 mb-3">
+            <div class="col-4 col-md-3">
+              <div class="featuredBox d-flex flex-column gap-1">
+                <span>From</span>
+                <span class="price">$181</span>
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="featuredBox d-flex flex-column gap-1">
+                <span>Duration</span>
+                <span>6 days</span>
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="featuredBox d-flex flex-column gap-1">
+                <span>Max People</span>
+                <span>100</span>
+              </div>
+            </div>
+            <div class="col-4 col-md-3">
+              <div class="featuredBox d-flex flex-column gap-1">
+                <span>Min Age</span>
+                <span>10+</span>
+              </div>
+            </div>
+            <div class="col col-md-6">
+              <div class="featuredBox d-flex flex-column gap-1">
+                <span>Tour Type</span>
+                <span>Honeymoon, Museum Tours</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="featuredBox d-flex flex-column border-0">
+                <span>Reviews</span>
+                <div class="d-flex flex-column">
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <span class="rateReview">4.63 / 5 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="gallary" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="image/galary (4).jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="image/galary (3).jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="image/galary (1).jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="image/galary (2).jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-9">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-3 mt-3 mb-2 mb-md-4">
+                <div class="col-6 col-md-3">
+                  <div
+                    class="SingelTaps d-flex justify-content-center align-items-center py-3 px-3"
+                  >
+                    <span>Overview</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div
+                    class="SingelTaps d-flex justify-content-center align-items-center py-3 px-3"
+                  >
+                    <span>Itinerary</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div
+                    class="SingelTaps d-flex justify-content-center align-items-center py-3 px-3"
+                  >
+                    <span>Prices</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div
+                    class="SingelTaps d-flex justify-content-center align-items-center py-3 px-3"
+                  >
+                    <span>Trip Information</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <!-- overview -->
+              <div class="layoutviews active">
+                <div class="row gap-2">
+                  <div class="content_overview col col-md-12 my-md-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </div>
+                </div>
+                <!-- inclued and exCluded  -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header_included my-3">Included:</div>
+                    <ul class="included_section row gap-3">
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          Skip the airport line with our Fast Track service upon
+                          arrival at Cairo International Airport.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          Meet and greet service by our representatives upon
+                          your airport arrival.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          All transfers in a private air-conditioned vehicle.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          Assistance with guest relations during your stay.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          SDomestic flights (Cairo / Luxor / Cairo).
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          Accommodation in Cairo for 3 nights, including daily
+                          breakfast.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <i class="fa fa-check"></i>
+                        <span>
+                          Accommodation in Luxor for 1 night, including daily
+                          breakfast.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12">
+                    <div class="header_included my-3">Included:</div>
+                    <ul class="exincluded_section row gap-3">
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          Skip the airport line with our Fast Track service upon
+                          arrival at Cairo International Airport.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          Meet and greet service by our representatives upon
+                          your airport arrival.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          All transfers in a private air-conditioned vehicle.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          Assistance with guest relations during your stay.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          SDomestic flights (Cairo / Luxor / Cairo).
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          Accommodation in Cairo for 3 nights, including daily
+                          breakfast.
+                        </span>
+                      </li>
+                      <li class="d-flex gap-2 align-items-center">
+                        <img src="image/X.svg" alt="" />
+                        <span>
+                          Accommodation in Luxor for 1 night, including daily
+                          breakfast.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- itinerary -->
+              <div class="layoutviews"></div>
+              <!-- proce and Accommmedation -->
+              <div class="layoutviews">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span
+                          class="flex-grow-1 itemHeader d-flex justify-content-center align-items-center"
+                          >Diamond</span
+                        >
+                      </th>
+                      <th>
+                        <span
+                          class="flex-grow-1 itemHeader d-flex justify-content-center align-items-center"
+                          >Hotels</span
+                        >
+                      </th>
+                      <th>
+                        <span
+                          class="flex-grow-1 itemHeader d-flex justify-content-center align-items-center"
+                          >Prices</span
+                        >
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-50">
+                        <div
+                          class="seconsText d-flex justify-content-center align-items-center flex-column gap-2"
+                        >
+                          <span>May - Sep</span>
+                          <span>Per Person</span>
+                        </div>
+                      </td>
+                      <td class="w-50">
+                        <div
+                          class="d-flex justify-content-center align-items-center gap-3 flex-column p-2"
+                        >
+                          <div class="tabletext">
+                            Four Seasons Hotel First Residence
+                          </div>
+                          <div class="roomType d-flex gap-1 align-items-center">
+                            <img src="image/Deluxe.svg" alt="" />
+                            <span>Deluxe Room</span>
+                          </div>
+                          <div class="tabletext">
+                            Sofitel Old Cataract Aswan
+                          </div>
+                          <div class="roomType d-flex gap-1 align-items-center">
+                            <img src="image/Premium Room.svg" alt="" />
+                            <span>Deluxe Room</span>
+                          </div>
+                          <div class="roomType d-flex gap-1 align-items-center">
+                            <img src="image/Premium Room.svg" alt="" />
+                            <span>Deluxe Room</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="w-50">
+                        <div
+                          class="priseAccommmedation p-2 d-flex justify-content-center align-items-center"
+                        >
+                          <span> $7489 </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="w-50">
+                        <div
+                          class="seconsText d-flex justify-content-center align-items-center flex-column gap-2"
+                        >
+                          <span>May - Sep</span>
+                          <span>Per Person</span>
+                        </div>
+                      </td>
+                      <td class="w-50">
+                        <div
+                          class="d-flex justify-content-center align-items-center gap-3 flex-column p-2"
+                        >
+                          <div class="tabletext">
+                            Four Seasons Hotel First Residence
+                          </div>
+                          <div class="roomType d-flex gap-1 align-items-center">
+                            <img src="image/Deluxe.svg" alt="" />
+                            <span>Deluxe Room</span>
+                          </div>
+                          <div class="tabletext">
+                            Sofitel Old Cataract Aswan
+                          </div>
+                          <div class="roomType d-flex gap-1 align-items-center">
+                            <img src="image/Premium Room.svg" alt="" />
+                            <span>Deluxe Room</span>
+                          </div>
+                          <div class="roomType d-flex gap-1 align-items-center">
+                            <img src="image/Premium Room.svg" alt="" />
+                            <span>Deluxe Room</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="w-50">
+                        <div
+                          class="priseAccommmedation p-2 d-flex justify-content-center align-items-center"
+                        >
+                          <span> $7489 </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- trip information -->
+              <div class="layoutviews">
+                <div class="accordion" id="info">
+                  <!-- prices -->
+                  <div class="accordion-item mt-4 rounded-3">
+                    <h2 class="accordion-header" id="prise">
+                      <button
+                        class="accordion-button headerInfo collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePrise"
+                        aria-expanded="false"
+                        aria-controls="collapsePrise"
+                      >
+                        Prices
+                      </button>
+                    </h2>
+                    <div
+                      id="collapsePrise"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="prise"
+                      data-bs-parent="#info"
+                    >
+                      <div class="accordion-body">
+                        the appropriate classes that we ll as t custom CSalso
+                        worth noting that just about any HTML can go within the
+                        .accordion-body, though the transition does limit
+                        overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="accordion-item mt-4 rounded-3">
+                    <h2 class="accordion-header" id="Policy">
+                      <button
+                        class="accordion-button headerInfo collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePolicy"
+                        aria-expanded="true"
+                        aria-controls="collapsePolicy"
+                      >
+                        Children Policy
+                      </button>
+                    </h2>
+                    <div
+                      id="collapsePolicy"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="Policy"
+                      data-bs-parent="#info"
+                    >
+                      <div class="accordion-body">
+                        the appropriate classes that we ll as t custom CSalso
+                        worth noting that just about any HTML can go within the
+                        .accordion-body, though the transition does limit
+                        overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="accordion-item mt-4 rounded-3">
+                    <h2 class="accordion-header" id="Booking">
+                      <button
+                        class="accordion-button headerInfo collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseBooking"
+                        aria-expanded="true"
+                        aria-controls="collapseBooking"
+                      >
+                        Booking Policy
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseBooking"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="Booking"
+                      data-bs-parent="#info"
+                    >
+                      <div class="accordion-body">
+                        the appropriate classes that we ll as t custom CSalso
+                        worth noting that just about any HTML can go within the
+                        .accordion-body, though the transition does limit
+                        overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="accordion-item mt-4 rounded-3">
+                    <h2 class="accordion-header" id="Tipping">
+                      <button
+                        class="accordion-button headerInfo collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTipping"
+                        aria-expanded="true"
+                        aria-controls="collapseTipping"
+                      >
+                        CTipping
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTipping"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="Tipping"
+                      data-bs-parent="#info"
+                    >
+                      <div class="accordion-body">
+                        the appropriate classes that we ll as t custom CSalso
+                        worth noting that just about any HTML can go within the
+                        .accordion-body, though the transition does limit
+                        overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="accordion-item mt-4 rounded-3">
+                    <h2 class="accordion-header" id="Cancelation">
+                      <button
+                        class="accordion-button headerInfo collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseCancelation"
+                        aria-expanded="true"
+                        aria-controls="collapseCancelation"
+                      >
+                        Cancelation Policy
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseCancelation"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="Cancelation"
+                      data-bs-parent="#info"
+                    >
+                      <div class="accordion-body">
+                        the appropriate classes that we ll as t custom CSalso
+                        worth noting that just about any HTML can go within the
+                        .accordion-body, though the transition does limit
+                        overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- from review -->
+                <div class="formRview row mt-5">
+                  <!-- header -->
+                  <div class="header">Leave a review!</div>
+                  <!-- email and name  -->
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                        aria-label="First name"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        aria-label="Last name"
+                      />
+                    </div>
+                  </div>
+                  <!-- place -->
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="place"
+                    />
+                  </div>
+                  <!-- rate Text -->
+                  <div class="rateText">Click to rate</div>
+                  <!-- rate star -->
+                  <div
+                    class="rateStar d-flex justify-content-center align-items-center"
+                  >
+                    <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                  </div>
+                  <!-- Review title -->
+                  <div class="ReviewTitle">Review title</div>
+                  <!-- Example -->
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Example: The best trip EVER!"
+                    />
+                  </div>
+                  <!-- recommend -->
+                  <div class="recommend">
+                    Would you recommend this trip for a friend?
+                  </div>
+                  <!-- yes or no  -->
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        no
+                      </label>
+                    </div>
+                  </div>
+                  <!-- text aera  -->
+                  <div class="">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      placeholder="Description"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <!-- buttem submit -->
+                  <div class="buttomSubmit">
+                    <button>Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 pt-4 col-md-3">
+          <div class="inquireSection rounded-2 overflow-hidden" id="from">
+            <div class="headerInquery text-center">INQUIRE NOW</div>
+            <div class="form_inquire row gap-3 justify-content-center p-3">
+              <!-- name and email -->
+
+              <div class="row gap-2">
+                <input
+                  class="form-control col"
+                  type="text"
+                  placeholder="Name"
+                  aria-label="Name example"
+                />
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Email"
+                  aria-label="Email example"
+                />
+              </div>
+              <!-- nationily -->
+              <div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Nationality</option>
+                  <option value="1">egypt</option>
+                  <option value="2">cairo</option>
+                  <option value="3">paris</option>
+                </select>
+              </div>
+              <!-- code and number -->
+              <div class="d-flex align-items-center">
+                <select
+                  class="form-select code_selected"
+                  aria-label="Default select example"
+                >
+                  <option selected>code</option>
+                  <option value="1">+1</option>
+                  <option value="2">+20</option>
+                  <option value="3">+23</option>
+                  <option value="3">+43</option>
+                  <option value="3">+80</option>
+                </select>
+                <input
+                  class="form-control inputCode"
+                  type="text"
+                  placeholder="Number"
+                  aria-label="Name example"
+                />
+              </div>
+              <!-- date -->
+              <div class="d-flex gap-2 align-items-center">
+                <div class="startDate">
+                  <label>Arrival* </label>
+                  <div class="date">
+                    <input
+                      type="text"
+                      placeholder=" Arrival Date "
+                      onfocus="(this.type='date')"
+                    />
+                  </div>
+                </div>
+                <!-- end date -->
+                <div class="endDate">
+                  <label>Departure*</label>
+                  <div class="date">
+                    <input
+                      type="text"
+                      placeholder="Departure Date"
+                      onfocus="(this.type='date')"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- counter drobdown -->
+              <div class="drobdownCounter">
+                <div
+                  class="inputCounter d-flex align-items-center justify-content-between"
+                >
+                  <span>Adults. Children. Infants</span>
+                  <img src="image/Chevron.svg" alt="" />
+                </div>
+                <!-- counter box  -->
+                <div class="counterbox">
+                  <div
+                    class="counter d-flex flex-column gap-3 align-items-center"
+                  >
+                    <!-- adults -->
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100"
+                    >
+                      <span class="textCounter"> Adults </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
+                      >
+                        <img
+                          onclick="removeCounter('adults')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="adults"
+                          type="text"
+                          name="adults"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounter('adults')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100"
+                    >
+                      <span class="textCounter"> Children </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
+                      >
+                        <img
+                          onclick="removeCounter('Children')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="Children"
+                          type="text"
+                          name="Children"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounter('Children')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100"
+                    >
+                      <span class="textCounter"> Infants </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
+                      >
+                        <img
+                          onclick="removeCounter('Infants')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="Infants"
+                          type="text"
+                          name="Infants"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounter('Infants')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- buton done -->
+                    <div
+                      class="buttoncounter d-flex justify-content-center align-items-center p-2 w-100"
+                    >
+                      <button>Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fight chack box -->
+              <div class="d-flex gap-3 align-content-center">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label contextFormInauire"
+                    for="flexCheckDefault"
+                  >
+                    Add flight to your vacation package
+                  </label>
+                </div>
+              </div>
+              <!-- text aera -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Your tour requirements"
+                  rows="3"
+                ></textarea>
+              </div>
+              <!-- terms and conditons chack box -->
+              <div class="d-flex gap-3 align-content-center">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label contextFormInauire"
+                    for="flexCheckDefault"
+                  >
+                    I agree to the Terms and Conditions
+                  </label>
+                </div>
+              </div>
+              <div
+                class="bottonInqueryFrom w-100 d-flex justify-content-center align-items-center p-3 my-2"
+              >
+                <button>INQUIRE NOW!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- intinerary   -->
+    <div class="itinerarySection position-relative overflow-hidden">
+      <div class="seaWay position-absolute">
+        <span class="start">START</span>
+        <span class="end">END</span>
+      </div>
+      <!-- boat  -->
+      <div class="boat">
+        <img src="image/ship.png" alt="" />
+      </div>
+      <!-- header -->
+      <div
+        class="header_Itinerery d-flex flex-column align-items-center gap-3 py-5 mt-4"
+      >
+        <p class="hedaer">TOUR <span>ITINERARY</span></p>
+        <div class="desc">Highights of Your Journey</div>
+      </div>
+      <div class="row itinarary position-relative">
+        <!-- card -->
+        <div class="col-12">
+          <div class="itineraryCard row position-relative">
+            <div
+              class="daynumber position-absolute d-flex justify-content-center align-items-center"
+            >
+              <span> day 1</span>
+            </div>
+            <div class="imgcard col-12 col-md-6">
+              <img src="image/pexels (1).jpg" alt="" />
+            </div>
+            <!-- content -->
+            <div
+              class="contentItinery py-2 d-flex flex-column gap-3 col-12 col-md-6 ps-md-5"
+            >
+              <div class="header d-flex flex-column px-md-3">
+                <span> snow Mountain City </span>
+                <span> priovine / Snow Mountain</span>
+              </div>
+              <div class="desc px-1 px-md-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                scelerisque, purus sit amet elementum blandit, sem arcu egestas
+                quam, eget malesuada sem libero eu ante. Duis nec ultricies
+                enim. Sed cursus volutpat finibus. Morbi at ornare purus.
+                Vivamus congue suscipit dui nec fringilla. Nam auctor velit nec
+                nisi molestie, ut maximus libero euismod. Nam dolor nunc,
+                consequat nec sollicitudin vel, commodo vitae ex.
+              </div>
+              <!-- tour feuture -->
+              <ul class="tourFeuture row g-md-0 px-md-5">
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-map-marker-alt"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Tourist Attracion </span>
+                    <span> Sunrise point of Riverview</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Best Buy of this Place: </span>
+                    <span>Handmade Wooden Accessories</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-utensils"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Food Speciality:</span>
+                    <span>Sushie</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-street-view"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Activity:</span>
+                    <span>Two Hours Boating Ride</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="col-12">
+          <div
+            class="itineraryCard d-flex flex-column flex-md-row gap-4 gap-md-0 position-relative"
+          >
+            <div
+              class="daynumber position-absolute d-flex justify-content-center align-items-center"
+            >
+              <span> day 1</span>
+            </div>
+            <!-- content -->
+            <div
+              class="contentItinery rignt d-flex flex-column gap-3 col-12 col-md-6"
+            >
+              <div class="header d-flex flex-column">
+                <span> snow Mountain City </span>
+                <span> priovine / Snow Mountain</span>
+              </div>
+              <div class="desc px-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                scelerisque, purus sit amet elementum blandit, sem arcu egestas
+                quam, eget malesuada sem libero eu ante. Duis nec ultricies
+                enim. Sed cursus volutpat finibus. Morbi at ornare purus.
+                Vivamus congue suscipit dui nec fringilla. Nam auctor velit nec
+                nisi molestie, ut maximus libero euismod. Nam dolor nunc,
+                consequat nec sollicitudin vel, commodo vitae ex.
+              </div>
+              <!-- tour feuture -->
+              <ul class="tourFeuture row g-md-0 px-md-2">
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-map-marker-alt"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Tourist Attracion </span>
+                    <span> Sunrise point of Riverview</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Best Buy of this Place: </span>
+                    <span>Handmade Wooden Accessories</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-utensils"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Food Speciality:</span>
+                    <span>Sushie</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-street-view"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Activity:</span>
+                    <span>Two Hours Boating Ride</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- image -->
+
+            <div class="imgcard col-12 col-md-6 d-flex flex-column">
+              <div
+                class="tourDelight d-flex align-items-center justify-content-center py-4 gap-3"
+              >
+                <i class="fa fa-star"></i>
+                <div class="delightText">
+                  <span>TOUR DELIGHT : </span> Dinner with Ice Cream Treat
+                </div>
+              </div>
+              <img src="image/pexels (1).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="col-12">
+          <div
+            class="itineraryCard d-flex flex-column flex-md-row gap-4 gap-md-0 position-relative"
+          >
+            <div
+              class="daynumber position-absolute d-flex justify-content-center align-items-center"
+            >
+              <span> day 1</span>
+            </div>
+            <!-- image -->
+            <div class="imgcard col-12 col-md-6">
+              <div
+                class="tourDelight d-flex align-items-center justify-content-center py-4 gap-3"
+              >
+                <i class="fa fa-star"></i>
+                <div class="delightText">
+                  <span>TOUR DELIGHT : </span> Dinner with Ice Cream Treat
+                </div>
+              </div>
+              <img src="image/pexels (1).jpg" alt="" />
+            </div>
+            <!-- content -->
+            <div
+              class="contentItinery d-flex flex-column gap-3 col-12 col-md-6"
+            >
+              <div class="header d-flex flex-column px-md-3">
+                <span> snow Mountain City </span>
+                <span> priovine / Snow Mountain</span>
+              </div>
+              <div class="desc px-1 px-md-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                scelerisque, purus sit amet elementum blandit, sem arcu egestas
+                quam, eget malesuada sem libero eu ante. Duis nec ultricies
+                enim. Sed cursus volutpat finibus. Morbi at ornare purus.
+                Vivamus congue suscipit dui nec fringilla. Nam auctor velit nec
+                nisi molestie, ut maximus libero euismod. Nam dolor nunc,
+                consequat nec sollicitudin vel, commodo vitae ex.
+              </div>
+              <!-- tour feuture -->
+              <ul class="tourFeuture row g-md-0 px-md-5">
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-map-marker-alt"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Tourist Attracion </span>
+                    <span> Sunrise point of Riverview</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Best Buy of this Place: </span>
+                    <span>Handmade Wooden Accessories</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-utensils"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Food Speciality:</span>
+                    <span>Sushie</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-street-view"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Activity:</span>
+                    <span>Two Hours Boating Ride</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="col-12">
+          <div
+            class="itineraryCard d-flex flex-column flex-md-row gap-4 gap-md-0 position-relative"
+          >
+            <div
+              class="daynumber position-absolute d-flex justify-content-center align-items-center"
+            >
+              <span> day 1</span>
+            </div>
+            <!-- content -->
+            <div
+              class="contentItinery rignt d-flex flex-column gap-3 col-12 col-md-6"
+            >
+              <div class="header d-flex flex-column">
+                <span> snow Mountain City </span>
+                <span> priovine / Snow Mountain</span>
+              </div>
+              <div class="desc px-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                scelerisque, purus sit amet elementum blandit, sem arcu egestas
+                quam, eget malesuada sem libero eu ante. Duis nec ultricies
+                enim. Sed cursus volutpat finibus. Morbi at ornare purus.
+                Vivamus congue suscipit dui nec fringilla. Nam auctor velit nec
+                nisi molestie, ut maximus libero euismod. Nam dolor nunc,
+                consequat nec sollicitudin vel, commodo vitae ex.
+              </div>
+              <!-- tour feuture -->
+              <ul class="tourFeuture row g-md-0 px-md-2">
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-map-marker-alt"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Tourist Attracion </span>
+                    <span> Sunrise point of Riverview</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-shopping-cart"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span> Best Buy of this Place: </span>
+                    <span>Handmade Wooden Accessories</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-utensils"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Food Speciality:</span>
+                    <span>Sushie</span>
+                  </div>
+                </li>
+                <li
+                  class="feuture d-flex align-items-center gap-3 col-12 col-md-6 gap-md-2"
+                >
+                  <i class="fa fa-street-view"></i>
+                  <div class="feutureText d-flex flex-column gap-2 py-3">
+                    <span>Activity:</span>
+                    <span>Two Hours Boating Ride</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- image -->
+
+            <div class="imgcard col-12 col-md-6 d-flex flex-column">
+              <div
+                class="tourDelight d-flex align-items-center justify-content-center py-4 gap-3"
+              >
+                <i class="fa fa-star"></i>
+                <div class="delightText">
+                  <span>TOUR DELIGHT : </span> Dinner with Ice Cream Treat
+                </div>
+              </div>
+              <img src="image/pexels (1).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- may you like  -->
+    <div class="container mt-4 pt-5">
+      <div class="headerMayLike my-3">You May Also Like</div>
+      <div class="row g-3">
+        <div class="col-md-8 col-12">
+          <div id="mayYouLike" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="singleTour.html">
+                    <!-- cards offer -->
+                    <div class="offerCard mx-2">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="cardImg position-relative">
+                            <img src="image/tour_8.jpg" alt="" />
+                            <div
+                              class="d-flex flex-column gap-2 stats position-absolute"
+                            >
+                              <div class="kindTour">
+                                <span>Populer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="contentCard d-flex flex-column py-3 px-4">
+                            <div class="header">
+                              Uluru and Kings Canyon Discovery
+                            </div>
+                            <div class="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quas, deleniti!
+                            </div>
+                            <div class="d-flex gap-5 align-items-center mb-3">
+                              <div class="durationOffer">
+                                <i class="far fa-clock"></i>
+                                <span>12 days</span>
+                              </div>
+                              <div class="rating d-flex align-items-center">
+                                <div class="star d-flex align-items-center">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                </div>
+                                <span>4.38/5</span>
+                              </div>
+                            </div>
+                            <div
+                              class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                            >
+                              <div
+                                class="priceOffer d-flex align-items-center gap-1"
+                              >
+                                <span>From</span>
+                                <span>$122</span>
+                                <span>$150</span>
+                              </div>
+                              <div
+                                class="btnMoreInfo d-flex align-items-center"
+                              >
+                                <button>More Ingomation</button>
+                                <i class="fa fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="singleTour.html">
+                    <!-- cards offer -->
+                    <div class="offerCard mx-2">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="cardImg position-relative">
+                            <img src="image/tour_8.jpg" alt="" />
+                            <div
+                              class="d-flex flex-column gap-2 stats position-absolute"
+                            >
+                              <div class="kindTour">
+                                <span>Populer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="contentCard d-flex flex-column py-3 px-4">
+                            <div class="header">
+                              Uluru and Kings Canyon Discovery
+                            </div>
+                            <div class="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quas, deleniti!
+                            </div>
+                            <div class="d-flex gap-5 align-items-center mb-3">
+                              <div class="durationOffer">
+                                <i class="far fa-clock"></i>
+                                <span>12 days</span>
+                              </div>
+                              <div class="rating d-flex align-items-center">
+                                <div class="star d-flex align-items-center">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                </div>
+                                <span>4.38/5</span>
+                              </div>
+                            </div>
+                            <div
+                              class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                            >
+                              <div
+                                class="priceOffer d-flex align-items-center gap-1"
+                              >
+                                <span>From</span>
+                                <span>$122</span>
+                                <span>$150</span>
+                              </div>
+                              <div
+                                class="btnMoreInfo d-flex align-items-center"
+                              >
+                                <button>More Ingomation</button>
+                                <i class="fa fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="singleTour.html">
+                    <!-- cards offer -->
+                    <div class="offerCard mx-2">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="cardImg position-relative">
+                            <img src="image/tour_8.jpg" alt="" />
+                            <div
+                              class="d-flex flex-column gap-2 stats position-absolute"
+                            >
+                              <div class="kindTour">
+                                <span>Populer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="contentCard d-flex flex-column py-3 px-4">
+                            <div class="header">
+                              Uluru and Kings Canyon Discovery
+                            </div>
+                            <div class="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quas, deleniti!
+                            </div>
+                            <div class="d-flex gap-5 align-items-center mb-3">
+                              <div class="durationOffer">
+                                <i class="far fa-clock"></i>
+                                <span>12 days</span>
+                              </div>
+                              <div class="rating d-flex align-items-center">
+                                <div class="star d-flex align-items-center">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                </div>
+                                <span>4.38/5</span>
+                              </div>
+                            </div>
+                            <div
+                              class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                            >
+                              <div
+                                class="priceOffer d-flex align-items-center gap-1"
+                              >
+                                <span>From</span>
+                                <span>$122</span>
+                                <span>$150</span>
+                              </div>
+                              <div
+                                class="btnMoreInfo d-flex align-items-center"
+                              >
+                                <button>More Ingomation</button>
+                                <i class="fa fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="singleTour.html">
+                    <!-- cards offer -->
+                    <div class="offerCard mx-2">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="cardImg position-relative">
+                            <img src="image/tour_8.jpg" alt="" />
+                            <div
+                              class="d-flex flex-column gap-2 stats position-absolute"
+                            >
+                              <div class="kindTour">
+                                <span>Populer</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="contentCard d-flex flex-column py-3 px-4">
+                            <div class="header">
+                              Uluru and Kings Canyon Discovery
+                            </div>
+                            <div class="desc">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quas, deleniti!
+                            </div>
+                            <div class="d-flex gap-5 align-items-center mb-3">
+                              <div class="durationOffer">
+                                <i class="far fa-clock"></i>
+                                <span>12 days</span>
+                              </div>
+                              <div class="rating d-flex align-items-center">
+                                <div class="star d-flex align-items-center">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                </div>
+                                <span>4.38/5</span>
+                              </div>
+                            </div>
+                            <div
+                              class="footerCard d-flex justify-content-between align-items-center py-4 py-md-2"
+                            >
+                              <div
+                                class="priceOffer d-flex align-items-center gap-1"
+                              >
+                                <span>From</span>
+                                <span>$122</span>
+                                <span>$150</span>
+                              </div>
+                              <div
+                                class="btnMoreInfo d-flex align-items-center"
+                              >
+                                <button>More Ingomation</button>
+                                <i class="fa fa-arrow-right"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="Promo py-4">
+            <div class="promoContent d-flex flex-column mx-3 gap-2">
+              <span>HAPPY HOLIDAY</span>
+              <span>Stay & Enjoy</span>
+              <span>15% off on all booking</span>
+              <div class="btnPromo">
+                <button>Book Now</button>
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- F and Q -->
+    <div class="container-sm">
+      <div class="headerSection">
+        <div class="header">FREQUENTLY ASKED QUESTIONS</div>
+      </div>
+      <!-- faq section -->
+      <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <span>Q.</span>
+              Do you offer international packages?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The best destinations for honeymoon are Kerala, Goa, Uttarakhand,
+              Andaman Islands, and Kashmir.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              <span>Q.</span>
+
+              Can we customize our package with you?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The best destinations for honeymoon are Kerala, Goa, Uttarakhand,
+              Andaman Islands, and Kashmir.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              <span>Q.</span>
+
+              Why would we book our package?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The best destinations for honeymoon are Kerala, Goa, Uttarakhand,
+              Andaman Islands, and Kashmir.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="footerSection">
+      <div class="container">
+        <div class="row gx-0 gy-3">
+          <!-- logo footer -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column gap-3">
+              <div class="logoFooter">
+                <img src="image/newLoge.png" alt="" />
+              </div>
+              <div class="footerdesc">
+                We are one of the world’s largest travel sellers on tours and
+                cruises. With tour operator volume buys plus our low everyday
+                prices you can save up to 40% versus assembling the same
+                itinerary on your own!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row px-2">
+              <div class="footerLinks col-12 col-md-4">
+                <div class="headerLinks py-3">COMPANY</div>
+                <ul class="links">
+                  <li>Home</li>
+                  <li>Crociere Sul Nilo</li>
+                  <li>Tour Egitto</li>
+                  <li><a href="aboutUs.html"> About us </a></li>
+                  <li><a href="contactUs.html"> Contact Us</a></li>
+
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <div class="footerLinks col-12 col-md-4">
+                <div class="headerLinks py-3">TOP DESTINATIONS</div>
+                <ul class="links">
+                  <li>New York City</li>
+                  <li>San Francisco</li>
+                  <li>Las Vegas</li>
+                  <li><a href="aboutUs.html"> Hawaii</a></li>
+                  <li>egypt</li>
+                </ul>
+              </div>
+              <div class="contactUsFooter col-12 col-md-4">
+                <div class="headerLinks py-3">contact us</div>
+                <ul class="coutactUs d-flex flex-column gap-2">
+                  <li class="">
+                    <div class="iconSocil">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <span>mohamedrefat@gmail.com</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <i class="fab fa-facebook"></i>
+                    </div>
+                    <span>Crociere Sul Nilo Travel</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <i class="fab fa-pinterest"></i>
+                    </div>
+                    <span>CrociereSulNilo.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyRightSection mb-md-0" style="margin-bottom: 88px">
+      <div>Copyright © GoElite Club 2021. All right reserved.</div>
+      <div>Terms and Privacy Policy</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+      //
+    </script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="js/singlecruise.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/inquri.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css"
+      rel="stylesheet"
+    />
+    <title>from</title>
+  </head>
+  <body>
+    <div class="banner">
+      <!-- header buttom -->
+      <div class="header_From">
+        <div class="header">TAILOR MAKE YOUR TRIP</div>
+        <div class="description">
+          With Nile Cruise Vacation you can customize your trip as you prefer.
+        </div>
+      </div>
+      <!-- from  -->
+      <div class="container">
+        <div class="from-container">
+          <div class="from">
+            <!-- steps -->
+            <div class="stepsSection">
+              <div class="singelStep">
+                <div class="lauStep active"><span>1</span></div>
+                <div class="contentStep">Trip Details</div>
+              </div>
+              <div class="stepLiner"></div>
+
+              <div class="singelStep">
+                <div class="lauStep"><span>2</span></div>
+                <div class="contentStep">Your budget</div>
+              </div>
+              <div class="stepLiner"></div>
+
+              <div class="singelStep">
+                <div class="lauStep"><span>3</span></div>
+                <div class="contentStep">Your Details</div>
+              </div>
+            </div>
+            <!-- liner -->
+            <div class="line_from"></div>
+            <!-- form input -->
+            <div class="fromInput">
+              <div class="inputcontainter">
+                <p class="fromTitle">Let’s plan your trip now!</p>
+                <!-- mail and name -->
+                <div class="Mail_name">
+                  <div class="name">
+                    <label>name</label>
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div class="mail">
+                    <label>Mail</label>
+                    <input type="text" placeholder="Mail" />
+                  </div>
+                </div>
+                <!-- nationality and number code -->
+                <div class="nationAndNumber">
+                  <!-- nationalty -->
+                  <div class="nationalty">
+                    <label>nationalty</label>
+                    <select
+                      id="select-beast"
+                      placeholder="Natioality .."
+                      autocomplete="off"
+                    >
+                      <option value="">Select a person...</option>
+                      <option value="4">Thomas Edison</option>
+                      <option value="1">Nikola</option>
+                      <option value="3">Nikola Tesla</option>
+                      <option value="5">Arnold Schwarzenegger</option>
+                    </select>
+                    <img
+                      class="arrowNatioality"
+                      src="https://www.svgrepo.com/show/428133/down-arrow2.svg"
+                      width="25px"
+                      height="25px"
+                      alt=""
+                    />
+                  </div>
+                  <!-- Mobile Number -->
+                  <div class="condNumberConteiner">
+                    <label> Code </label>
+                    <div class="inputNumberContainer">
+                      <div class="code">
+                        <select
+                          id="select-code"
+                          placeholder="Code"
+                          autocomplete="off"
+                        >
+                          <option value="">+20</option>
+                          <option value="4">+30</option>
+                          <option value="1">+29</option>
+                          <option value="3">+70</option>
+                          <option value="5">+300</option>
+                        </select>
+                        <img
+                          class="arrowCode"
+                          src="https://www.svgrepo.com/show/428133/down-arrow2.svg"
+                          width="25px"
+                          height="25px"
+                          alt=""
+                        />
+
+                        <!-- <div class="codeImag">
+                        <img src="../image/Chevron.png" alt="">
+                       </div> -->
+                      </div>
+                      <div class="number">
+                        <input type="number" placeholder="Number" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- counter  -->
+                <div class="inputCounterContainer">
+                  <div class="counterContainer">
+                    <p>aduilt (+12)</p>
+                    <div class="counter">
+                      <div onclick="removeCounter('aduilt')" class="add">
+                        <img
+                          src="https://www.svgrepo.com/show/449842/minus-square-s.svg"
+                          width="20px"
+                          height="20px"
+                          alt=""
+                        />
+                      </div>
+                      <input
+                        id="aduilt"
+                        type="text"
+                        name="adults"
+                        class="form-control counterInput"
+                        value="0"
+                        min="1"
+                        max="100"
+                        readonly=""
+                      />
+                      <div onclick="addCounter('aduilt')" class="remove">
+                        <img
+                          src="https://www.svgrepo.com/show/449868/plus-square-s.svg"
+                          width="20px"
+                          height="20px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="counterContainer">
+                    <p>Children(-12)</p>
+                    <div class="counter Children">
+                      <div onclick="removeCounter('Children')" class="add">
+                        <img
+                          src="https://www.svgrepo.com/show/449842/minus-square-s.svg"
+                          width="20px"
+                          height="20px"
+                          alt=""
+                        />
+                      </div>
+                      <input
+                        id="Children"
+                        type="text"
+                        name="adults"
+                        class="form-control counterInput"
+                        value="0"
+                        min="1"
+                        max="100"
+                        readonly=""
+                      />
+                      <div onclick=" addCounter('Children')" class="remove">
+                        <img
+                          src="https://www.svgrepo.com/show/449868/plus-square-s.svg"
+                          width="20px"
+                          height="20px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="counterContainer">
+                    <p>infants(0 to 2)</p>
+                    <div class="counter">
+                      <div onclick="removeCounter('infants')" class="add">
+                        <img
+                          src="https://www.svgrepo.com/show/449842/minus-square-s.svg"
+                          width="20px"
+                          height="20px"
+                          alt=""
+                        />
+                      </div>
+                      <input
+                        id="Infants"
+                        type="text"
+                        name="adults"
+                        class="form-control counterInput"
+                        value="0"
+                        min="1"
+                        max="100"
+                        readonly=""
+                      />
+                      <div onclick=" addCounter('infants')" class="remove">
+                        <img
+                          src="https://www.svgrepo.com/show/449868/plus-square-s.svg"
+                          width="20px"
+                          height="20px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nextButtom">
+                  <a href="form.html">
+                    <button><span>Next</span></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <script src="./js/inquri.js"></script>
+  </body>
+</html>
